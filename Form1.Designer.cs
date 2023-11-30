@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataPersonView = new System.Windows.Forms.DataGridView();
             this.nameLabel = new System.Windows.Forms.Label();
             this.prezimeLabel = new System.Windows.Forms.Label();
@@ -55,131 +55,121 @@
             // dataPersonView
             // 
             this.dataPersonView.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataPersonView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataPersonView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataPersonView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataPersonView.Location = new System.Drawing.Point(248, 31);
-            this.dataPersonView.Margin = new System.Windows.Forms.Padding(4);
+            this.dataPersonView.Location = new System.Drawing.Point(186, 25);
             this.dataPersonView.Name = "dataPersonView";
             this.dataPersonView.ReadOnly = true;
-            this.dataPersonView.Size = new System.Drawing.Size(784, 486);
+            this.dataPersonView.Size = new System.Drawing.Size(588, 395);
             this.dataPersonView.TabIndex = 0;
             this.dataPersonView.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataPersonView_ColumnHeaderMouseClick);
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(27, 55);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameLabel.Location = new System.Drawing.Point(20, 45);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(29, 16);
+            this.nameLabel.Size = new System.Drawing.Size(24, 13);
             this.nameLabel.TabIndex = 1;
             this.nameLabel.Text = "Ime";
             // 
             // prezimeLabel
             // 
             this.prezimeLabel.AutoSize = true;
-            this.prezimeLabel.Location = new System.Drawing.Point(27, 98);
-            this.prezimeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.prezimeLabel.Location = new System.Drawing.Point(20, 80);
             this.prezimeLabel.Name = "prezimeLabel";
-            this.prezimeLabel.Size = new System.Drawing.Size(56, 16);
+            this.prezimeLabel.Size = new System.Drawing.Size(44, 13);
             this.prezimeLabel.TabIndex = 2;
             this.prezimeLabel.Text = "Prezime";
             // 
             // spolLabel
             // 
             this.spolLabel.AutoSize = true;
-            this.spolLabel.Location = new System.Drawing.Point(27, 142);
-            this.spolLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.spolLabel.Location = new System.Drawing.Point(20, 115);
             this.spolLabel.Name = "spolLabel";
-            this.spolLabel.Size = new System.Drawing.Size(35, 16);
+            this.spolLabel.Size = new System.Drawing.Size(28, 13);
             this.spolLabel.TabIndex = 3;
             this.spolLabel.Text = "Spol";
             // 
             // datumLabel
             // 
             this.datumLabel.AutoSize = true;
-            this.datumLabel.Location = new System.Drawing.Point(27, 186);
-            this.datumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.datumLabel.Location = new System.Drawing.Point(20, 151);
             this.datumLabel.Name = "datumLabel";
-            this.datumLabel.Size = new System.Drawing.Size(98, 16);
+            this.datumLabel.Size = new System.Drawing.Size(79, 13);
             this.datumLabel.TabIndex = 4;
             this.datumLabel.Text = "DatumRođenja";
             // 
             // drzavaLabel
             // 
             this.drzavaLabel.AutoSize = true;
-            this.drzavaLabel.Location = new System.Drawing.Point(27, 255);
-            this.drzavaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.drzavaLabel.Location = new System.Drawing.Point(20, 207);
             this.drzavaLabel.Name = "drzavaLabel";
-            this.drzavaLabel.Size = new System.Drawing.Size(50, 16);
+            this.drzavaLabel.Size = new System.Drawing.Size(41, 13);
             this.drzavaLabel.TabIndex = 5;
             this.drzavaLabel.Text = "Država";
             // 
             // mjestoLabel
             // 
             this.mjestoLabel.AutoSize = true;
-            this.mjestoLabel.Location = new System.Drawing.Point(27, 293);
-            this.mjestoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.mjestoLabel.Location = new System.Drawing.Point(20, 238);
             this.mjestoLabel.Name = "mjestoLabel";
-            this.mjestoLabel.Size = new System.Drawing.Size(99, 16);
+            this.mjestoLabel.Size = new System.Drawing.Size(79, 13);
             this.mjestoLabel.TabIndex = 6;
             this.mjestoLabel.Text = "MjestoRođenja";
             // 
             // imeBox
             // 
-            this.imeBox.Location = new System.Drawing.Point(88, 47);
-            this.imeBox.Margin = new System.Windows.Forms.Padding(4);
+            this.imeBox.Location = new System.Drawing.Point(66, 38);
             this.imeBox.Name = "imeBox";
-            this.imeBox.Size = new System.Drawing.Size(132, 22);
+            this.imeBox.Size = new System.Drawing.Size(100, 20);
             this.imeBox.TabIndex = 7;
             this.imeBox.Validated += new System.EventHandler(this.imeBox_Validated);
             // 
             // prezimeBox
             // 
-            this.prezimeBox.Location = new System.Drawing.Point(88, 90);
-            this.prezimeBox.Margin = new System.Windows.Forms.Padding(4);
+            this.prezimeBox.Location = new System.Drawing.Point(66, 73);
             this.prezimeBox.Name = "prezimeBox";
-            this.prezimeBox.Size = new System.Drawing.Size(132, 22);
+            this.prezimeBox.Size = new System.Drawing.Size(100, 20);
             this.prezimeBox.TabIndex = 8;
+            this.prezimeBox.Validated += new System.EventHandler(this.prezimeBox_Validated);
             // 
             // drzavaBox
             // 
-            this.drzavaBox.Location = new System.Drawing.Point(88, 246);
-            this.drzavaBox.Margin = new System.Windows.Forms.Padding(4);
+            this.drzavaBox.Location = new System.Drawing.Point(66, 200);
             this.drzavaBox.Name = "drzavaBox";
-            this.drzavaBox.Size = new System.Drawing.Size(132, 22);
+            this.drzavaBox.Size = new System.Drawing.Size(100, 20);
             this.drzavaBox.TabIndex = 11;
+            this.drzavaBox.Validated += new System.EventHandler(this.drzavaBox_Validated);
             // 
             // mjestoBox
             // 
-            this.mjestoBox.Location = new System.Drawing.Point(88, 313);
-            this.mjestoBox.Margin = new System.Windows.Forms.Padding(4);
+            this.mjestoBox.Location = new System.Drawing.Point(66, 254);
             this.mjestoBox.Name = "mjestoBox";
-            this.mjestoBox.Size = new System.Drawing.Size(132, 22);
+            this.mjestoBox.Size = new System.Drawing.Size(100, 20);
             this.mjestoBox.TabIndex = 12;
+            this.mjestoBox.Validated += new System.EventHandler(this.mjestoBox_Validated);
             // 
             // spolBox
             // 
             this.spolBox.FormattingEnabled = true;
-            this.spolBox.Location = new System.Drawing.Point(88, 132);
-            this.spolBox.Margin = new System.Windows.Forms.Padding(4);
+            this.spolBox.Location = new System.Drawing.Point(66, 107);
             this.spolBox.Name = "spolBox";
-            this.spolBox.Size = new System.Drawing.Size(61, 24);
+            this.spolBox.Size = new System.Drawing.Size(47, 21);
             this.spolBox.TabIndex = 9;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(29, 425);
-            this.addButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addButton.Location = new System.Drawing.Point(22, 345);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(191, 28);
+            this.addButton.Size = new System.Drawing.Size(143, 23);
             this.addButton.TabIndex = 13;
             this.addButton.Text = "Dodaj osobu";
             this.addButton.UseVisualStyleBackColor = true;
@@ -188,19 +178,21 @@
             // datumBox
             // 
             this.datumBox.CustomFormat = "yyyy,mm,dd";
-            this.datumBox.Location = new System.Drawing.Point(88, 205);
+            this.datumBox.Location = new System.Drawing.Point(66, 167);
+            this.datumBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.datumBox.Name = "datumBox";
-            this.datumBox.Size = new System.Drawing.Size(134, 22);
+            this.datumBox.Size = new System.Drawing.Size(102, 20);
             this.datumBox.TabIndex = 10;
             this.datumBox.Value = new System.DateTime(2023, 11, 29, 0, 0, 0, 0);
             // 
             // progressBar
             // 
             this.progressBar.ForeColor = System.Drawing.Color.Lime;
-            this.progressBar.Location = new System.Drawing.Point(30, 372);
+            this.progressBar.Location = new System.Drawing.Point(22, 302);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar.Maximum = 102;
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(190, 23);
+            this.progressBar.Size = new System.Drawing.Size(142, 19);
             this.progressBar.Step = 17;
             this.progressBar.TabIndex = 17;
             // 
@@ -214,9 +206,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.datumBox);
             this.Controls.Add(this.addButton);
@@ -232,7 +224,6 @@
             this.Controls.Add(this.prezimeLabel);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.dataPersonView);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataPersonView)).EndInit();

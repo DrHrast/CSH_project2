@@ -56,6 +56,7 @@ namespace CSH_project2
             MjestoRođenja = "Bjelovar" }
         };
 
+        //TODO - 03 Try adding tabs for possible other projects.
         public Form1()
         {
             InitializeComponent();
@@ -65,8 +66,10 @@ namespace CSH_project2
             spolBox.Items.Add('M');
             spolBox.Items.Add('F');
             spolBox.SelectedIndex = 0;
-        }
+            progressBar.Value = 34;
 
+        }
+        //TODO - 02 Finaly get to the POINT and try list sorting.
         private void dataPersonView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             //listOfPersons = (BindingList<Person>)listOfPersons.OrderBy(x => x.Ime);
@@ -97,13 +100,62 @@ namespace CSH_project2
             dataPersonView.DataSource = listOfPersons;
         }
 
+        bool imeIsEmpty = true;
+        //DID_IT - 01 Make a bool for {value != ""} to fix a repeted progress bar fill.
+        //DID_IT - 01.1 Some bug with bar emptying when a field is empty and field is changed.
         private void imeBox_Validated(object sender, EventArgs e)
         {
-            if (imeBox.Text.Length > 0)
+            if (imeBox.Text.Length > 0 && imeIsEmpty)
             {
                 progressBar.Value += 17;
+                imeIsEmpty = false;
             }
-            else if (imeBox.Text == "" && progressBar.Value != 0) { progressBar.Value -= 17; }
+            else if (imeBox.Text == "" && progressBar.Value != 0 && !imeIsEmpty) { 
+                progressBar.Value -= 17;
+                imeIsEmpty = true;
+            }
+        }
+        bool prezimeIsEmpty = true;
+        private void prezimeBox_Validated(object sender, EventArgs e)
+        {
+            if (prezimeBox.Text.Length > 0 && prezimeIsEmpty)
+            {
+                progressBar.Value += 17;
+                prezimeIsEmpty = false;
+            }
+            else if (prezimeBox.Text == "" && progressBar.Value != 0 && !prezimeIsEmpty)
+            {
+                progressBar.Value -= 17;
+                prezimeIsEmpty = true;
+            }
+        }
+        bool drzavaIsEmpty = true;
+        private void drzavaBox_Validated(object sender, EventArgs e)
+        {
+            if (drzavaBox.Text.Length > 0 && drzavaIsEmpty)
+            {
+                progressBar.Value += 17;
+                drzavaIsEmpty = false;
+            }
+            else if (drzavaBox.Text == "" && progressBar.Value != 0 && !drzavaIsEmpty)
+            {
+                progressBar.Value -= 17;
+                drzavaIsEmpty = true;
+            }
+        }
+        bool mjestoIsEmpty = true;
+        private void mjestoBox_Validated(object sender, EventArgs e)
+        {
+            if (mjestoBox.Text.Length > 0 && mjestoIsEmpty)
+            {
+                progressBar.Value += 17;
+                mjestoIsEmpty = false;
+            }
+            else if (mjestoBox.Text == "" && progressBar.Value != 0 && !mjestoIsEmpty)
+            {
+                progressBar.Value -= 17;
+                mjestoIsEmpty = true;
+            }
         }
     }
 }
