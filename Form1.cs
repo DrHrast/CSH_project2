@@ -92,6 +92,10 @@ namespace CSH_project2
                 });
 
                 progressBar.Value = 0;
+                imeBox.Text = string.Empty;
+                prezimeBox.Text = string.Empty;
+                drzavaBox.Text = string.Empty;
+                mjestoBox.Text = string.Empty;
             }else
             {
                 MessageBox.Show("Fill all data boxes.", "Fill error", MessageBoxButtons.OK, MessageBoxIcon.Error);
