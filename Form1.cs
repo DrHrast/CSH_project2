@@ -54,10 +54,46 @@ namespace CSH_project2
             Spol = 'F',
             DatumRođenja = new DateTime(1984, 6, 18),
             Država = "Hrvatska",
-            MjestoRođenja = "Bjelovar" }
+            MjestoRođenja = "Bjelovar" },
+        new Person {
+            Ime = "Michael",
+            Prezime = "Kane",
+            Spol = 'M',
+            DatumRođenja = new DateTime(1933, 3, 14),
+            Država = "Engleska",
+            MjestoRođenja = "London" },
+        new Person {
+            Ime = "Michelle",
+            Prezime = "Pfeiffer",
+            Spol = 'F',
+            DatumRođenja = new DateTime(1958, 4, 29),
+            Država = "SAD",
+            MjestoRođenja = "Santa Ana" },
+        new Person {
+            Ime = "Milla",
+            Prezime = "Jovovich",
+            Spol = 'F',
+            DatumRođenja = new DateTime(1975, 12, 17),
+            Država = "Ukrajina",
+            MjestoRođenja = "Kijev" },
+        new Person {
+            Ime = "Keanu",
+            Prezime = "Reeves",
+            Spol = 'M',
+            DatumRođenja = new DateTime(1964, 9, 2),
+            Država = "Lebanon",
+            MjestoRođenja = "Beirut" },
+        new Person {
+            Ime = "Robert",
+            Prezime = "De Niro",
+            Spol = 'M',
+            DatumRođenja = new DateTime(1943, 8, 17),
+            Država = "SAD",
+            MjestoRođenja = "New York" }
         };
 
-        //TODO - 03 Try adding tabs for possible other projects.
+        //DID_IT - 03 Try adding tabs for possible other projects.
+        //TODO - 03.1 Tabs added, just figure out how to implement it (could be with new project or something else).
         public PH_Projekt()
         {
             InitializeComponent();
@@ -70,9 +106,9 @@ namespace CSH_project2
             progressBar.Value = 34;
 
         }
-        //DID_IT - 02 Finaly get to the POINT and try list sorting.
+        //DID_IT - 02 Finally get to the POINT and try list sorting.
         //DID_IT - 02.1 Sort works!! Now how to make individual column to sort by it self?
-        //TODO - 02.2 Maybe some other sort of check, like a switch.
+        //DID_IT - 02.2 Maybe some other sort of check, like a switch.
         bool IsColumnSorted = false;
         private void dataPersonView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
