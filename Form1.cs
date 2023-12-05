@@ -76,146 +76,51 @@ namespace CSH_project2
         bool IsColumnSorted = false;
         private void dataPersonView_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            var temp = new List<Person>();
             if (!IsColumnSorted)
             {
-                if (e.ColumnIndex == 0)
+                switch(e.ColumnIndex)
                 {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Ime).ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = true;
+                    case 0:
+                        temp = ListOfPersons.OrderBy(x => x.Ime).ToList(); break;
+                    case 1:
+                        temp = ListOfPersons.OrderBy(x => x.Prezime).ToList(); break;
+                    case 2:
+                        temp = ListOfPersons.OrderBy(x => x.Spol).ToList(); break;
+                    case 3:
+                        temp = ListOfPersons.OrderBy(x => x.DatumRođenja).ToList(); break;
+                    case 4:
+                        temp = ListOfPersons.OrderBy(x => x.Država).ToList(); break;
+                    case 5:
+                        temp = ListOfPersons.OrderBy(x => x.MjestoRođenja).ToList() ; break;
                 }
-                else if (e.ColumnIndex == 1)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Prezime).ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = true;
-                }
-                else if (e.ColumnIndex == 2)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Spol).ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = true;
-                }
-                else if (e.ColumnIndex == 3)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.DatumRođenja).ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = true;
-                }
-                else if (e.ColumnIndex == 4)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Država).ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = true;
-                }
-                else if (e.ColumnIndex == 5)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.MjestoRođenja).ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = true;
-                }
+                ListOfPersons = new ObservableCollection<Person>(temp);
+                IsColumnSorted = true;
+              
             }
             else if (IsColumnSorted)
             {
-                if (e.ColumnIndex == 0)
+                switch (e.ColumnIndex)
                 {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Ime).Reverse().ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = false;
+                    case 0:
+                        temp = ListOfPersons.OrderByDescending(x => x.Ime).ToList(); break;
+                    case 1:
+                        temp = ListOfPersons.OrderByDescending(x => x.Prezime).ToList(); break;
+                    case 2:
+                        temp = ListOfPersons.OrderByDescending(x => x.Spol).ToList(); break;
+                    case 3:
+                        temp = ListOfPersons.OrderByDescending(x => x.DatumRođenja).ToList(); break;
+                    case 4:
+                        temp = ListOfPersons.OrderByDescending(x => x.Država).ToList(); break;
+                    case 5:
+                        temp = ListOfPersons.OrderByDescending(x => x.MjestoRođenja).ToList(); break;
                 }
-                else if (e.ColumnIndex == 1)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Prezime).Reverse().ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = false;
-                }
-                else if (e.ColumnIndex == 2)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Spol).Reverse().ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = false;
-                }
-                else if (e.ColumnIndex == 3)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.DatumRođenja).Reverse().ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = false;
-                }
-                else if (e.ColumnIndex == 4)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.Država).Reverse().ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = false;
-                }
-                else if (e.ColumnIndex == 5)
-                {
-                    List<Person> temp = ListOfPersons.ToList();
-                    temp = temp.OrderBy(x => x.MjestoRođenja).Reverse().ToList();
-                    ListOfPersons = new ObservableCollection<Person>() { };
-                    foreach (Person person in temp)
-                    {
-                        ListOfPersons.Add(person);
-                    }
-                    IsColumnSorted = false;
-                }
+                ListOfPersons = new ObservableCollection<Person>(temp);
+                IsColumnSorted = false;
+                
             }
             //ListOfPersons = (BindingList<Person>)ListOfPersons.OrderBy(x => x.Ime);
-            dataPersonView.DataSource = null;
+            //dataPersonView.DataSource = null;
             dataPersonView.DataSource = ListOfPersons;
         }
 
@@ -234,15 +139,18 @@ namespace CSH_project2
                     MjestoRođenja = mjestoBox.Text,
                 });
 
-                progressBar.Value = 34;
-                imeBox.Text = string.Empty;
-                prezimeBox.Text = string.Empty;
-                drzavaBox.Text = string.Empty;
-                mjestoBox.Text = string.Empty;
-                IsImeEmpty = true;
-                IsPrezimeEmpty = true;
-                IsDrzavaEmpty = true;
-                IsMjestoEmpty = true;
+                if (!checkKeepDataBox.Checked)
+                {
+                    progressBar.Value = 34;
+                    imeBox.Text = string.Empty;
+                    prezimeBox.Text = string.Empty;
+                    drzavaBox.Text = string.Empty;
+                    mjestoBox.Text = string.Empty;
+                    IsImeEmpty = true;
+                    IsPrezimeEmpty = true;
+                    IsDrzavaEmpty = true;
+                    IsMjestoEmpty = true;
+                }
 
             }else
             {

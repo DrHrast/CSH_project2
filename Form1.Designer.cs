@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataPersonView = new System.Windows.Forms.DataGridView();
             this.nameLabel = new System.Windows.Forms.Label();
             this.prezimeLabel = new System.Windows.Forms.Label();
@@ -51,6 +51,7 @@
             this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sPProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jGProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkKeepDataBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataPersonView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource1)).BeginInit();
@@ -60,14 +61,14 @@
             // dataPersonView
             // 
             this.dataPersonView.AllowUserToAddRows = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataPersonView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataPersonView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataPersonView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataPersonView.Location = new System.Drawing.Point(186, 45);
             this.dataPersonView.Name = "dataPersonView";
@@ -231,20 +232,31 @@
             // sPProjectToolStripMenuItem
             // 
             this.sPProjectToolStripMenuItem.Name = "sPProjectToolStripMenuItem";
-            this.sPProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sPProjectToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.sPProjectToolStripMenuItem.Text = "SP_Project";
             // 
             // jGProjectToolStripMenuItem
             // 
             this.jGProjectToolStripMenuItem.Name = "jGProjectToolStripMenuItem";
-            this.jGProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jGProjectToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.jGProjectToolStripMenuItem.Text = "JG_Project";
+            // 
+            // checkKeepDataBox
+            // 
+            this.checkKeepDataBox.AutoSize = true;
+            this.checkKeepDataBox.Location = new System.Drawing.Point(18, 361);
+            this.checkKeepDataBox.Name = "checkKeepDataBox";
+            this.checkKeepDataBox.Size = new System.Drawing.Size(77, 17);
+            this.checkKeepDataBox.TabIndex = 19;
+            this.checkKeepDataBox.Text = "Keep Data";
+            this.checkKeepDataBox.UseVisualStyleBackColor = true;
             // 
             // PH_Projekt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(874, 531);
+            this.Controls.Add(this.checkKeepDataBox);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.datumBox);
             this.Controls.Add(this.addButton);
@@ -296,6 +308,7 @@
         private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sPProjectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jGProjectToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkKeepDataBox;
     }
 }
 
