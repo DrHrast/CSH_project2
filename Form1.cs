@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CSH_project2
 {
-    public partial class Form1 : Form
+    public partial class PH_Projekt : Form
     {
 
         class Person
@@ -58,7 +58,7 @@ namespace CSH_project2
         };
 
         //TODO - 03 Try adding tabs for possible other projects.
-        public Form1()
+        public PH_Projekt()
         {
             InitializeComponent();
 
@@ -255,7 +255,7 @@ namespace CSH_project2
         bool IsImeEmpty = true;
         //DID_IT - 01 Make a bool for {value != ""} to fix a repeted progress bar fill.
         //DID_IT - 01.1 Some bug with bar emptying when a field is empty and field is changed.
-        //TODO - 01.2 Another bug after adding value. Can't add another and 
+        //DID_IT - 01.2 Another bug after adding value. Can't add another and 
         private void imeBox_Validated(object sender, EventArgs e)
         {
             if (imeBox.Text.Length > 0 && IsImeEmpty)

@@ -1,6 +1,6 @@
 ﻿namespace CSH_project2
 {
-    partial class Form1
+    partial class PH_Projekt
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataPersonView = new System.Windows.Forms.DataGridView();
             this.nameLabel = new System.Windows.Forms.Label();
             this.prezimeLabel = new System.Windows.Forms.Label();
@@ -47,34 +47,39 @@
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.programBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.projectsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sPProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jGProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataPersonView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataPersonView
             // 
             this.dataPersonView.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataPersonView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataPersonView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataPersonView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataPersonView.Location = new System.Drawing.Point(186, 25);
+            this.dataPersonView.Location = new System.Drawing.Point(186, 45);
             this.dataPersonView.Name = "dataPersonView";
             this.dataPersonView.ReadOnly = true;
-            this.dataPersonView.Size = new System.Drawing.Size(588, 395);
+            this.dataPersonView.Size = new System.Drawing.Size(676, 395);
             this.dataPersonView.TabIndex = 0;
             this.dataPersonView.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataPersonView_ColumnHeaderMouseClick);
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(20, 45);
+            this.nameLabel.Location = new System.Drawing.Point(15, 80);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(24, 13);
             this.nameLabel.TabIndex = 1;
@@ -83,7 +88,7 @@
             // prezimeLabel
             // 
             this.prezimeLabel.AutoSize = true;
-            this.prezimeLabel.Location = new System.Drawing.Point(20, 80);
+            this.prezimeLabel.Location = new System.Drawing.Point(15, 115);
             this.prezimeLabel.Name = "prezimeLabel";
             this.prezimeLabel.Size = new System.Drawing.Size(44, 13);
             this.prezimeLabel.TabIndex = 2;
@@ -92,7 +97,7 @@
             // spolLabel
             // 
             this.spolLabel.AutoSize = true;
-            this.spolLabel.Location = new System.Drawing.Point(20, 115);
+            this.spolLabel.Location = new System.Drawing.Point(15, 150);
             this.spolLabel.Name = "spolLabel";
             this.spolLabel.Size = new System.Drawing.Size(28, 13);
             this.spolLabel.TabIndex = 3;
@@ -101,7 +106,7 @@
             // datumLabel
             // 
             this.datumLabel.AutoSize = true;
-            this.datumLabel.Location = new System.Drawing.Point(20, 151);
+            this.datumLabel.Location = new System.Drawing.Point(15, 186);
             this.datumLabel.Name = "datumLabel";
             this.datumLabel.Size = new System.Drawing.Size(79, 13);
             this.datumLabel.TabIndex = 4;
@@ -110,7 +115,7 @@
             // drzavaLabel
             // 
             this.drzavaLabel.AutoSize = true;
-            this.drzavaLabel.Location = new System.Drawing.Point(20, 207);
+            this.drzavaLabel.Location = new System.Drawing.Point(15, 242);
             this.drzavaLabel.Name = "drzavaLabel";
             this.drzavaLabel.Size = new System.Drawing.Size(41, 13);
             this.drzavaLabel.TabIndex = 5;
@@ -119,7 +124,7 @@
             // mjestoLabel
             // 
             this.mjestoLabel.AutoSize = true;
-            this.mjestoLabel.Location = new System.Drawing.Point(20, 238);
+            this.mjestoLabel.Location = new System.Drawing.Point(15, 273);
             this.mjestoLabel.Name = "mjestoLabel";
             this.mjestoLabel.Size = new System.Drawing.Size(79, 13);
             this.mjestoLabel.TabIndex = 6;
@@ -127,7 +132,7 @@
             // 
             // imeBox
             // 
-            this.imeBox.Location = new System.Drawing.Point(66, 38);
+            this.imeBox.Location = new System.Drawing.Point(61, 73);
             this.imeBox.Name = "imeBox";
             this.imeBox.Size = new System.Drawing.Size(100, 20);
             this.imeBox.TabIndex = 7;
@@ -135,7 +140,7 @@
             // 
             // prezimeBox
             // 
-            this.prezimeBox.Location = new System.Drawing.Point(66, 73);
+            this.prezimeBox.Location = new System.Drawing.Point(61, 108);
             this.prezimeBox.Name = "prezimeBox";
             this.prezimeBox.Size = new System.Drawing.Size(100, 20);
             this.prezimeBox.TabIndex = 8;
@@ -143,7 +148,7 @@
             // 
             // drzavaBox
             // 
-            this.drzavaBox.Location = new System.Drawing.Point(66, 200);
+            this.drzavaBox.Location = new System.Drawing.Point(61, 235);
             this.drzavaBox.Name = "drzavaBox";
             this.drzavaBox.Size = new System.Drawing.Size(100, 20);
             this.drzavaBox.TabIndex = 11;
@@ -151,7 +156,7 @@
             // 
             // mjestoBox
             // 
-            this.mjestoBox.Location = new System.Drawing.Point(66, 254);
+            this.mjestoBox.Location = new System.Drawing.Point(61, 289);
             this.mjestoBox.Name = "mjestoBox";
             this.mjestoBox.Size = new System.Drawing.Size(100, 20);
             this.mjestoBox.TabIndex = 12;
@@ -160,14 +165,14 @@
             // spolBox
             // 
             this.spolBox.FormattingEnabled = true;
-            this.spolBox.Location = new System.Drawing.Point(66, 107);
+            this.spolBox.Location = new System.Drawing.Point(61, 142);
             this.spolBox.Name = "spolBox";
             this.spolBox.Size = new System.Drawing.Size(47, 21);
             this.spolBox.TabIndex = 9;
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(22, 345);
+            this.addButton.Location = new System.Drawing.Point(17, 380);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(143, 23);
             this.addButton.TabIndex = 13;
@@ -178,8 +183,8 @@
             // datumBox
             // 
             this.datumBox.CustomFormat = "yyyy,mm,dd";
-            this.datumBox.Location = new System.Drawing.Point(66, 167);
-            this.datumBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datumBox.Location = new System.Drawing.Point(61, 202);
+            this.datumBox.Margin = new System.Windows.Forms.Padding(2);
             this.datumBox.Name = "datumBox";
             this.datumBox.Size = new System.Drawing.Size(102, 20);
             this.datumBox.TabIndex = 10;
@@ -188,8 +193,8 @@
             // progressBar
             // 
             this.progressBar.ForeColor = System.Drawing.Color.Lime;
-            this.progressBar.Location = new System.Drawing.Point(22, 302);
-            this.progressBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.progressBar.Location = new System.Drawing.Point(17, 337);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar.Maximum = 102;
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(142, 19);
@@ -204,11 +209,42 @@
             // 
             this.programBindingSource1.DataSource = typeof(CSH_project2.Program);
             // 
-            // Form1
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projectsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(874, 24);
+            this.menuStrip1.TabIndex = 18;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // projectsToolStripMenuItem
+            // 
+            this.projectsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sPProjectToolStripMenuItem,
+            this.jGProjectToolStripMenuItem});
+            this.projectsToolStripMenuItem.Name = "projectsToolStripMenuItem";
+            this.projectsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.projectsToolStripMenuItem.Text = "Projects";
+            // 
+            // sPProjectToolStripMenuItem
+            // 
+            this.sPProjectToolStripMenuItem.Name = "sPProjectToolStripMenuItem";
+            this.sPProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sPProjectToolStripMenuItem.Text = "SP_Project";
+            // 
+            // jGProjectToolStripMenuItem
+            // 
+            this.jGProjectToolStripMenuItem.Name = "jGProjectToolStripMenuItem";
+            this.jGProjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jGProjectToolStripMenuItem.Text = "JG_Project";
+            // 
+            // PH_Projekt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(874, 531);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.datumBox);
             this.Controls.Add(this.addButton);
@@ -224,11 +260,15 @@
             this.Controls.Add(this.prezimeLabel);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.dataPersonView);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "PH_Projekt";
+            this.Text = "PH_Projekt";
             ((System.ComponentModel.ISupportInitialize)(this.dataPersonView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,6 +292,10 @@
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.DateTimePicker datumBox;
         private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem projectsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sPProjectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jGProjectToolStripMenuItem;
     }
 }
 
