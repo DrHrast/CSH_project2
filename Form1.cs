@@ -23,7 +23,6 @@ namespace CSH_project2
             public DateTime DatumRođenja { get; set; }
             public string Država { get; set; }
             public string MjestoRođenja { get; set; }
-
         }
 
         ObservableCollection<Person> ListOfPersons = new ObservableCollection<Person>()
@@ -104,8 +103,10 @@ namespace CSH_project2
             spolBox.Items.Add('F');
             spolBox.SelectedIndex = 0;
             progressBar.Value = 34;
-
+            datumBox.Format = DateTimePickerFormat.Custom;
+            datumBox.CustomFormat = "dd/MM/yyyy";
         }
+
         //DID_IT - 02 Finally get to the POINT and try list sorting.
         //DID_IT - 02.1 Sort works!! Now how to make individual column to sort by it self?
         //DID_IT - 02.2 Maybe some other sort of check, like a switch.
